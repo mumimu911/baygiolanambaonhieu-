@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bây giờ là năm bao nhiêu?</title>
+    <style>
+        body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://images.cara.app/production/posts/cf345b3a-617f-4373-8d98-659c1c98860a/dancuquato-3G_MrWZFc0TcBkSVqsmOU-Kho-ng-Co-Tie-u-e-574_20250403181815.png?width=1920');
+    background-size: cover; 
+    background-position: center;
+    size: 200px;
+    
+}
+
+.timkiemthongtin {
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+}
+
+.nhaptimkiem {
+    width: 300px;         
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 10px;  
+}
+
+.nut {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.timkiemthongtin button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.timkiemthongtin button[type="submit"]:active {
+    background-color: #87d3ff;
+   
+}
+
+.timkiemthongtin button[type="submit"]:focus {
+    outline: yellow;
+   
+}
+
+.mobai h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.thanbai p {
+    color: #000000;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+.thanbai {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+main {
+    flex: 3;
+}
+
+.tinhot {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.tinhot img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tinhot p {
+    font-size: 1em;
+}
+
+.tinhot a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.tinhot a:hover {
+    text-decoration: underline;
+}
+
+.noidung2 .tin {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.noidung2 .tin img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.noidung2 h2, .tin h3 {
+    margin-bottom: 10px;
+}
+
+.tin p {
+    margin-bottom: 10px;
+}
+
+.tin a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.tin a:hover {
+    text-decoration: underline;
+}
+aside {
+    flex: 1;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+aside ul {
+    list-style: circle;
+    margin-left: 10px;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    color: #007bff;
+}
+
+aside a:active {
+    color: rgb(66, 65, 65)
+}
+
+aside a:visited {
+    color: rgb(135, 46, 46)
+}
+
+aside a {
+    color: #333;
+    text-decoration: none;
+}
+
+video {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+}
+    
+footer p {
+    margin: 5px 0;
+
+ 
+}
+.chantrang1 iframe {
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    resize: vertical;
+}
+textarea:focus {
+    outline: 2px solid #007bff
+}
+
+form h3 {
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+aside button[type="submit"] {
+
+    width: 90px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    cursor: pointer;
+   
+}
+   
+aside button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+   
+   
+aside button[type="submit"]:focus {
+    outline: yellow;
+   
+}
+   
+aside button[type="submit"]:active {
+    background-color: #87d3ff;
+   
+}
+
+form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+}
+aside input[type="text"] {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #f4f4f4;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px 0 10px 0;
+        
+}
+        
+aside input[type="text"]:focus {
+        outline: 2px solid #007bff;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="mobai">
+            <h1>BÁO THỜI KHÔNG</h1>
+            <p><em>"Cập nhật tin tức xuyên không gian-thời gian</em></p>
+            <p><em>nhanh chóng, tiện lợi, chính xác"</em></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Thế giới</a></li>
+                <li><a href="#">Kinh tế</a></li>
+                <li><a href="#">Thể thao</a></li>
+                <li><a href="#">Công nghệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="timkiemthongtin">
+        <input type="text" placeholder="Nhập từ khóa..." class="nhaptimkiem">
+        <button type="submit" class="nut">Tìm</button>
+    </div> 
+    <div class="thanbai">
+        <main>
+            <div class="noidung1">
+                <div class="tinhot">
+                    <img src="https://image.nhandan.vn/w800/Uploaded/2025/huounvj/2025_03_09/477-3228-3566.jpg.webp" alt="30/4" title="30/4">
+                    <h2> 50 Năm Kỷ Niệm Ngày Giải Phóng Miền Nam, Thống Nhất Đất Nước 30/4 (30/4/1975-30/4/2025)  </h2>
+                    <p>Ngày đăng: 30/4/2025 | Tác giả: Cái Chết Nhiệt Của Vũ Trụ </p>
+                    <p>Vào đúng thời khắc này 49 năm trước, những chiếc xe tăng húc đổ cánh cổng Dinh Độc Lập, lá cờ Giải phóng tung bay giữa không trung. Miền Nam hoàn toàn được giải phóng...</p>
+                    <a href="#">Đọc thêm</a>
+                </div>
+            </div>
+            <div class="noidung2">
+                <div class="tin">
+                    <img src="https://images.cara.app/production/posts/8f56166b-dbb8-4fd8-b45b-1bff0b77654e/dancuquato-vOk3SAJXV-DqUT1Jux-ou-z6474362056588_6f982ec8d11998b8008bd456a5d26c1b.jpg?width=1920" alt="Đại dương" title="Đại dương">
+                    <h3>Đại Dương Thật Sự Đang Chết Dần!</h3>
+                    <p>Ngày đăng: 03/02/2026 | Tác giả: Lan Anh Phạm </p>
+                    <p>Đại dương – nguồn sống của hành tinh xanh – đang đối mặt với nguy cơ suy thoái nghiêm trọng. Rác thải nhựa tràn lan, nhiệt độ nước biển tăng cao, nguồn tài nguyên cạn kiệt do khai thác quá mức…</p>
+                    <a href="#">Đọc thêm</a>
+                </div>
+                <div class="tin">
+                    <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/https://cms-prod.s3-sgn09.fptcloud.com/dan_ong_mang_thai_tu_nhien_duoc_khong_truong_hop_nao_nam_gioi_co_the_mang_thai_5_Cropped_40ad657e36.jpg" alt="Y học" title="Y học">
+                    <h3>Đàn Ông Đã Có Thể Mang Thai: Bước Đột Phá Của Y Học Hiện Đại</h3>
+                    <p>Ngày đăng: 04/11/3007 | Tác giả: Lê Huỳnh Công Trâm </p>
+                    <p>Các nhà khoa học đã đạt được bước tiến đáng kinh ngạc trong lĩnh vực y học sinh sản: giúp đàn ông sinh học có thể mang thai và sinh con. Thông qua công nghệ cấy ghép tử cung,...</p>
+                    <a href="#">Đọc thêm</a>
+                </div>
+                <div class="tin">
+                    <img src="https://i.pinimg.com/736x/53/a0/69/53a0694f0d7eb7f4c95b7f6d5a9907a6.jpg" alt="Khủng long" title="Khủng long">
+                    <h3>Cả Thế Giới Sốc Nặng: Khủng Long Bị Xoá Sổ Hoàn Toàn - Sự Thật Đằng Sau Bí Ẩn Kinh Hoàng</h3>
+                    <p>Ngày đăng: 65.998.976 TCN | Tác giả: Lệnh Sứ Thời Không </p>
+                    <p>Toàn bộ đám khủng long khổng lồ vừa lăn ra chết sạch sau một ngày trời đất rung chuyển! khói bụi mù mịt - dân chúng bàng hoàng, ai nấy đều sốc nặng trước cảnh tượng tan hoang. Rốt cuộc đã có chuyện gì xảy ra?!!</p>
+                    <a href="#">Đọc thêm</a>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div>
+            <h2><b>TIN NỔI BẬT</b></h2>
+            <ul>
+                <li><a href="#">Cuộc săn lùng phù thủy chính thức khép lại</a></li>
+                <li><a href="#">Bây giờ là năm bao nhiêu?</a></li>
+                <li><a href="#">4 học sinh được điểm 10 Tin nhờ lập trình trang web</a></li>
+                <li><a href="#">Sự phát triển của Bánh Mì Trí Nhớ - Con người đã quá phụ thuộc vào bảo bối thần kì?</a></li>
+            </ul>
+            </div>
+        <div>
+            <h2><b>VIDEO</b></h2>
+            <ul>
+            <video src="https://cdn2.tuoitre.vn/471584752817336320/2025/4/9/gif-cay-nga-17441930125661463794837.gif.mp4" controls>Trình duyệt của bạn có thể sẽ không tải được video</video>
+            <li><a href="#">Tai nạn thảm khốc, tài xế đã bỏ chạy</a></li>
+            <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls>Trình duyệt của bạn có thể sẽ không tải được video</video>
+            <li><a href="#">Trấn Thành tuyên bố lấn sân sang lĩnh vực điện ảnh hoạt hình</a></li>
+            <video src="https://cdn2.tuoitre.vn/471584752817336320/2025/3/1/robot-17408250322671571552496.gif.mp4" controls>Trình duyệt của bạn có thể sẽ không tải được video</video>
+            <li><a href="#">Liệu nhân loại đã có thể vượt qua được sự tiến bộ của AI?</a></li>
+            </ul>
+        </div>
+        <br>
+            <form method="POST">
+                <h2>Khảo Sát Độc Giả</h2>
+                <label for="name">Tên của bạn:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email (Tùy chọn):</label>
+                <input type="text" id="email" name="email">
+                <br>
+                <label>Đánh giá chất lượng đầu báo:</label>
+                <div>
+                    <label><input type="radio" name="danhgia" value="1">1</label>
+                    <label><input type="radio" name="danhgia" value="2">2</label>
+                    <label><input type="radio" name="danhgia" value="3">3</label>
+                    <label><input type="radio" name="danhgia" value="4">4</label>
+                    <label><input type="radio" name="danhgia" value="5">5</label>
+                </div>
+                    <h2> Mời bạn đóng góp ý kiến:</h2>
+                    <textarea id="ykien" name="ykien" rows="10" cols="30"></textarea><br>
+                    <button type="submit">Gửi</button>
+            </form>
+            </div>
+        </aside>
+    </div>
+    <footer>
+    <div class="chantrang1">
+            <h3> THÔNG TIN LIÊN LẠC </h3>
+        <p>Địa chỉ: Trường THPT Lê Hoàng Chiếu
+        73 Nguyễn Đình Chiểu, TT. Bình Đại, Bình Đại, Bến Tre</p>
+        <p>Liên hệ: Baygiolanambaonhieu@gmail.com</p>
+        <p>Hotline: 0000000001</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.968058882282!2d106.6912816!3d10.183249300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317557d88c5fcea9%3A0xf8bdf7a967288158!2zVHLGsOG7nW5nIFRIUFQgTMOqIEhvw6BuZyBDaGnhur91!5e0!3m2!1svi!2s!4v1743853796681!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>© 2025 Báo Thời Không. Bản quyền được bảo lưu</p>
+        </div>
+    </footer>
+</body>
+</html>
